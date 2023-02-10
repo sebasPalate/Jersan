@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_comiezo">
+
+    <fragment
+        android:id="@+id/navigation_comiezo"
+        android:name="com.example.jersan.ui.comienzo.ComienzoFragmento"
+        android:label="@string/title_comienzo"
+        tools:layout="@layout/fragmento_comienzo" >
+        <action
+            android:id="@+id/action_navigation_comiezo_to_recogidaFragment2"
+            app:destination="@id/recogidaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reservas"
+        android:name="com.example.jersan.ui.reservas.ReservasFragmento"
+        android:label="@string/title_reservas"
+        tools:layout="@layout/fragmento_reservas" />
+
+    <fragment
+        android:id="@+id/navigation_cuenta"
+        android:name="com.example.jersan.ui.cuenta.CuentaFragmento"
+        android:label="@string/title_cuenta"
+        tools:layout="@layout/fragmento_cuenta" />
+    <fragment
+        android:id="@+id/recogidaFragment"
+        android:name="com.example.jersan.ui.comienzo.entrega.RecogidaFragment"
+        android:label="fragmento_recogida"
+        tools:layout="@layout/fragmento_recogida" />
+</navigation>
